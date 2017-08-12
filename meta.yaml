@@ -1,0 +1,23 @@
+package:
+   name: heacore
+   version: "6.21"
+
+source:
+  fn: heasoft-6.21.tar
+  url: https://heasarc.nasa.gov/cgi-bin/Tools/tarit/tarit.pl?mode=download&arch=src&src_pc_linux_sci=Y&src_other_specify=&general=futils
+
+build:
+  number: 0
+
+requirements:
+ 
+ build:
+     - cfitsio
+     - ccfits
+   
+ run:
+     - cfitsio
+     - ccfits
+   
+about:
+  home: https://heasarc.gsfc.nasa.gov/lheasoft/
